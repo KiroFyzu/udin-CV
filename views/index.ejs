@@ -1,11 +1,696 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Varad Bhogayata | Software Developer</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126939217-2');
+  </script>
+</head>
+<body>
+  <!-- Navigation Menu-->
+  <!-- Nav class 1 -->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
+
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+          <img src="https://i.pinimg.com/736x/f1/b9/13/f1b9133c65ec275f4657dc916abad249.jpg" class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        mdi-action-assessment
+        mdi-social-poll
+        mdi-av-equalizer
+        -->
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+      
+      <li class="bold">
+        <!--
+        ICONS:
+        -->
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- 
+        1. mdi-communication-contacts
+        2. mdi-content-mail
+        3. mdi-communication-email
+        -->
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        1. mdi-action-description
+        2. mdi-file-folder
+        3. mdi-file-folder-open
+        4. mdi-file-attachment
+        5. mdi-file-folder-shared
+        -->
+        
+        <a aria-label="Open Varad's resume in a new tab" href="#" target="_blank"
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Varad
+        Bhogayata</a><span class="black-text">Software Developer</span>
+    </div>
+  </nav>
+
+  <!-- Nav class 3 -->
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Open Varad's Resume in a new tab"
+          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Heading lines and image -->
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="col-md-9">
+          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+            <div class="caption">
+              <h2>Hi, I'm <span class="teal">Muhammad Azzam Ishomuddin.</span></h2>
+              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+              <h5>With expertise in lighting and composition, he creates visually stunning works.</h5>
+            </div>
+            <div class="social">
+              <a href="http://linkedin.com/" target="_blank">
+                <button class="icon-btn linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://github.com/" target="_blank">
+                <button class="icon-btn github">
+                  <i class="fa fa-github"></i>
+                </button>
+              </a>
+            </div>
+            <div class='buttons'>
+              <a href="#about" class="readme">Read More</a>
+              <a href="#contact" class="contactme">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Section: About -->
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">About</h3>
+      <div class="container flow-text">
+        <!-- <blockquote>
+          <h2>
+            A Software Developer with a passion for Backend Development and Artificial Intelligence.
+
+          </h2>
+        </blockquote> -->        
+        <p>
+          I am a professional photographer with a keen eye for capturing the essence of every moment. I enjoy exploring creative perspectives and using photography to tell compelling stories. I always strive to bring 100% to the projects I take on.
+        
+          I have expertise in photography techniques such as lighting, composition, and post-production editing. With years of experience, I have worked on diverse projects, including portraits, events, and landscape photography, which have honed my skills and artistic approach.
+        
+          I am passionate about creating visually impactful images that resonate with audiences and bring ideas to life through the lens of my camera.
+        </p>        
+        <p>
+          <ul>
+            <li><b>Photography Styles:</b> Portrait, Event, Landscape, Product, Street</li>
+            <li><b>Equipment Expertise:</b> DSLR, Mirrorless Cameras, Prime and Zoom Lenses, Drone Photography</li>
+            <li><b>Editing Software:</b> Adobe Photoshop, Adobe Lightroom, Capture One, Canva</li>
+            <li><b>Creative Skills:</b> Lighting Techniques, Composition, Color Grading, Post-Processing</li>
+            <li><b>Tools & Platforms:</b> Social Media Marketing, Online Portfolio Management, Print Design</li>
+          </ul>
+        </p>
+        
+          
+        <!-- <p>
+          
+          Detail-oriented Software Developer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision.           
+        </p> -->
+        <p>
+          Seeking an opportunity to work in a creative and challenging role where I can utilize my skills in photography to deliver impactful visual content, gain valuable experiences, and achieve personal and professional growth.
+        </p>        
+        <!-- <p>
+          Another Paragraph
+        </p>  -->
+        <!-- <p>
+        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
+          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
+          aria-label="Navigate to the Full Stack React homepage"
+          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
+          aria-label='Navigate to the article "Scalable CSS"'
+          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
+        </p> -->
+      </div>
+    </section>
+
+
+    <!-- Third Section: Experience -->
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text teal">Experience</h3>
+      <div class="container">
+    
+        <!-- Latest Experience -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.zhiffy.com/" target="_blank"><img alt="Zhiffy logo"
+                    src="/assets/img/exp-zhiffy-logo-1.webp" class="responsive-img center-block" /></a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.zhiffy.com/" target="_blank"
+                      class="teal-text hoverline">Zhiffy</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Photographer</div>
+            <ul>
+              <li>
+                Specialized in capturing stunning visual stories through photography.
+              </li>
+              <li>
+                Expertise in portrait, landscape, and event photography with a focus on natural light.
+              </li>
+              <li>Created a portfolio that showcases high-quality imagery for clients in various industries.</li>
+              <li>
+                <b>Tools:</b> DSLR Cameras, Adobe Photoshop, Lightroom
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>2022 - Present | Jakarta, Indonesia</span>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.meditab.com" target="_blank"><img alt="Meditab logo"
+                    src="/assets/img/exp-meditab-logo-500x500.jpg" class="responsive-img center-block" /></a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="http://meditab.com" target="_blank"
+                      class="teal-text hoverline">Meditab</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Photographer</div>
+            <ul>
+              <li>
+                Captured high-quality photographs at events, including weddings, parties, and corporate functions.
+              </li>
+              <li>
+                Focused on creating a vibrant and dynamic photo collection that tells the story of each event.
+              </li>
+              <li>
+                Worked closely with clients to ensure their vision was fully captured in the images.
+              </li>
+              <li>
+                <b>Tools:</b> Canon, Nikon, Adobe Lightroom
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>2018 - 2022 | Jakarta, Indonesia</span>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <img alt="Mtag logo" src="/assets/img/exp-mtag-logo-250x250.jpg" class="responsive-img center-block" />
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="#experience" class="teal-text hoverline">Mtag Innovations</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Photographer</div>
+            <ul>
+              <li>
+                Worked on product photography for e-commerce platforms, helping brands enhance their online presence.
+              </li>
+              <li>
+                Specialized in creating compelling visual content that aligns with marketing strategies.
+              </li>
+              <li>
+                Managed post-processing work, including editing and enhancing product images for final delivery.
+              </li>
+              <li>
+                <b>Tools:</b> Adobe Photoshop, Capture One
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>2016 - 2018 | Jakarta, Indonesia</span>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.cignex.com" target="_blank"><img alt="Cignex logo"
+                    src="/assets/img/exp-cignex-logo.png" class="responsive-img center-block" /></a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.cignex.com" target="_blank"
+                      class="teal-text hoverline">CIGNEX Datamatics</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Photographer</div>
+            <ul>
+              <li>
+                Worked on professional photo shoots for corporate clients, creating images for marketing campaigns.
+              </li>
+              <li>
+                Assisted in creating content for websites and social media, ensuring consistent branding through imagery.
+              </li>
+              <li>
+                Collaborated with designers and marketing teams to curate photo galleries for various platforms.
+              </li>
+              <li>
+                <b>Tools:</b> Canon, Adobe Photoshop, Lightroom
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>2015 - 2016 | Jakarta, Indonesia</span>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+    
+
+    <!-- Fourth Section: Projects -->
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Muhammad Azzam Ishomuddin" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Muhammad Azzam Ishomuddin<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A talented photographer with a keen eye for capturing unique moments.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Photography, Adobe Lightroom, Adobe Photoshop, Camera Gear</li>
+                  <li>Specializes in portrait and landscape photography, with a focus on lighting and composition.</li>
+                  <li>Has worked with various clients for personal and commercial shoots.</li>
+                  <li>Passionate about exploring new places and capturing the beauty of everyday life.</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://www.instagram.com/azzam_ishomuddin/" target="_blank" data-position="top"
+                    data-tooltip="View Portfolio"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/azzam_ishomuddin/"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Muhammad Azzam Ishomuddin" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Muhammad Azzam Ishomuddin<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A talented photographer with a keen eye for capturing unique moments.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Photography, Adobe Lightroom, Adobe Photoshop, Camera Gear</li>
+                  <li>Specializes in portrait and landscape photography, with a focus on lighting and composition.</li>
+                  <li>Has worked with various clients for personal and commercial shoots.</li>
+                  <li>Passionate about exploring new places and capturing the beauty of everyday life.</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://www.instagram.com/azzam_ishomuddin/" target="_blank" data-position="top"
+                    data-tooltip="View Portfolio"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/azzam_ishomuddin/"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Muhammad Azzam Ishomuddin" src="/assets/img/project-practical-Text-Classification-with-Keras-and-Python_Watermark.webp" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Muhammad Azzam Ishomuddin<i class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A skilled photographer, capturing moments that tell a unique story.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Key Achievements</small><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Specialized Tools:</b> Photography, Adobe Lightroom, Adobe Photoshop, Camera Gear</li>
+                  <li>Experienced in portrait and landscape photography with an emphasis on composition and lighting.</li>
+                  <li>Proven track record with diverse clients across both personal and commercial photography.</li>
+                  <li>Passionate about capturing the beauty in everyday moments and exploring new locations.</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit" href="https://www.instagram.com/azzam_ishomuddin/" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Portfolio"><i class="fa fa-external-link"></i></a>
+                  <a aria-label="GitHub Repository" href="https://github.com/azzam_ishomuddin/" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Source"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Fifth Section: Skills -->
+    <section id="skills" class="section scrollspy">
+  <h3 class="page-title white-text teal">Skills</h3>
+  <div class="container">
+    <!-- Photographer Section -->
+    <div class="card">
+      <div class="card-content">
+        <h4 class="brown-text light">Photography Skills</h4>
+        <div class="row text-center">
+          <div class="col s4 m2">
+            <img alt="Photography" src="https://i.pinimg.com/736x/e7/c8/b9/e7c8b98193262758054984661b679368.jpg" class="responsive-img" />
+            Portrait Photography
+          </div>
+          <div class="col s4 m2">
+            <img alt="Photography" src="https://i.pinimg.com/736x/3a/1f/aa/3a1faaeb334aa5eeb67229f2f06b62cc.jpg" class="responsive-img" />
+            Landscape Photography
+          </div>
+          <div class="col s4 m2">
+            <img alt="Photography" src="https://i.pinimg.com/736x/cc/09/66/cc09662056bd11feaad34512280cc8ed.jpg" class="responsive-img" />
+            Lighting Techniques
+          </div>
+          <div class="col s4 m2">
+            <img alt="Photography" src="https://i.pinimg.com/736x/ed/94/ec/ed94ec86d3f3ee3889c3e430186f9c7f.jpg" class="responsive-img" />
+            Adobe Lightroom
+          </div>
+          <div class="col s4 m2">
+            <img alt="Photography" src="Adobe Photoshop" class="responsive-img" />
+            Adobe Photoshop
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Photography Tools -->
+    <div class="card">
+      <div class="card-content">
+        <h4 class="brown-text light">Other Photography Tools</h4>
+        <div class="row text-center">
+          <div class="col s4 m2">
+            <img alt="Camera Gear" src="https://i.pinimg.com/736x/6c/cf/7e/6ccf7e7308a0900f02bb33fac6798b29.jpg" class="responsive-img" />
+            Camera Gear
+          </div>
+          <div class="col s4 m2">
+            <img alt="Photography" src="https://i.pinimg.com/736x/43/83/ea/4383ea83b35fa46cd2e43385b123f4ae.jpg" class="responsive-img" />
+            Editing Software
+          </div>
+          <div class="col s4 m2">
+            <img alt="Photography" src="https://i.pinimg.com/736x/f8/fa/79/f8fa795c8950cc52265b7d5430364e71.jpg" class="responsive-img" />
+            Studio Setup
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="card">
+      <div class="card-content">
+        <h4 class="brown-text light">Follow Muhammad Azzam Ishomuddin</h4>
+        <div class="row text-center">
+          <div class="col s12 m6">
+            <a href="https://www.instagram.com/azzam_ishomuddin/" target="_blank" class="btn waves-effect waves-light teal">Instagram</a>
+          </div>
+          <div class="col s12 m6">
+            <a href="https://github.com/azzam_ishomuddin/" target="_blank" class="btn waves-effect waves-light teal">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="education" class="section scrollspy">
+  <h3 class="page-title white-text teal">Education</h3>
+  <div class="container">
+    <div class="row">
+      <!-- Education -->
+      <div class="col s12 m6 l6">
+        <div class="card">
+          <div class="card-content">
+            <p>
+              <span class="card-title"><a href="https://www.example-university.edu" target="_blank" class="teal-text hoverline">Example University</a></span>
+            </p>
+            <p class="brown-text">City, Country</p>
+            <p>
+              <b>Degree: </b>Bachelor of Science in Photography and Visual Arts      
+              <br>
+              <b>CGPA: </b>3.85/4.0
+            </p>
+
+            <ul>
+              <p>
+                <b>Relevant Courseworks:</b>
+              <ul>
+                <li>Digital Photography</li>
+                <li>Photojournalism</li>
+                <li>Visual Storytelling</li>                    
+                <li>Advanced Lighting Techniques</li>
+                <li>Creative Editing and Post-Processing</li>
+              </ul>
+              </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l6">
+        <div class="card">
+          <div class="card-content">
+            <p>
+              <span class="card-title"><a href="https://www.example-artschool.edu" target="_blank" class="teal-text hoverline">Example Art School</a></span>
+            </p>
+            <p class="brown-text">City, Country</p>
+            <p>
+              <b>Degree: </b>Diploma in Digital Media Arts
+              <br>
+              <b>CGPA: </b>3.75/4.0
+            </p>
+
+            <ul>
+              <p>
+                <b>Relevant Courseworks:</b>
+              <ul>
+                <li>Introduction to Digital Media</li>
+                <li>Graphic Design for Photographers</li>
+                <li>Video Production</li>
+                <li>Photography in Advertising</li>
+                <li>Web Design for Creatives</li>
+              </ul>
+              </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Eight Section: Contact -->
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Contact</h3>
+      <div class="container">
+        <p>
+          <a aria-label="Call Muhammad Azzam Ishomuddin" data-position="top" data-tooltip="Call Muhammad Azzam Ishomuddin"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i>
+            <a aria-label="Call Muhammad Azzam Ishomuddin">+62XXXXXXXXXX</a></a>
+        </p>
+        <p>
+          <a aria-label="Email Muhammad Azzam Ishomuddin" href="mailto:azzam@example.com" target="_blank" data-position="top"
+            data-tooltip="Email Muhammad Azzam Ishomuddin" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Muhammad Azzam Ishomuddin" href="mailto:azzam@example.com"
+              class="hoverline">azzam@example.com</a></a>
+        </p>
+        <p>
+          <a aria-label="View Muhammad Azzam Ishomuddin on GitHub" href="http://github.com/azzam_ishomuddin" target="_blank"
+            data-position="top" data-tooltip="View Muhammad Azzam Ishomuddin on GitHub"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Muhammad Azzam Ishomuddin on Github" href="http://github.com/azzam_ishomuddin" class="hoverline"
+              target="_blank">github.com/azzam_ishomuddin</a></a>
+        </p>
+        <p>
+          <a aria-label="View Muhammad Azzam Ishomuddin on LinkedIn" href="http://linkedin.com/in/azzam-ishomuddin" target="_blank"
+            data-position="top" data-tooltip="View Muhammad Azzam Ishomuddin on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-linkedin"></i><a
+              aria-label="Muhammad Azzam Ishomuddin on LinkedIn" href="http://linkedin.com/in/azzam-ishomuddin"
+              class="hoverline" target="_blank">linkedin.com/in/azzam-ishomuddin</a></a>
+        </p>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- typed.js -->
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Creative", "Visionary", "Professional"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
+
+
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
+</body>
 </html>
